@@ -1,0 +1,106 @@
+{
+  "skill_name": "fullstack-dev",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "创建一个任务管理应用，用户可以创建、编辑、删除任务，每个任务有标题、描述、截止日期和状态",
+      "expected_output": "生成完整的前后端项目结构，包含任务模型的CRUD操作",
+      "files": [],
+      "expectations": [
+        "创建了 frontend 和 backend 目录结构",
+        "定义了 Task 模型包含 title, description, due_date, status 字段",
+        "实现了任务的 CRUD API 端点",
+        "前端有任务列表和任务表单组件"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "帮我搭建一个用户认证系统，支持注册、登录、JWT token验证",
+      "expected_output": "完整的认证系统，包含用户模型、认证路由和前端登录注册页面",
+      "files": [],
+      "expectations": [
+        "创建了 User 模型包含 email, hashed_password 字段",
+        "实现了 /auth/register 和 /auth/login 端点",
+        "JWT token 生成和验证逻辑",
+        "前端有登录和注册页面"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "创建一个博客应用，支持文章的发布、编辑、删除，以及评论功能",
+      "expected_output": "博客应用完整结构，包含文章和评论模型、API和前端页面",
+      "files": [],
+      "expectations": [
+        "创建了 Post 和 Comment 模型",
+        "Post 和 Comment 之间有一对多关系",
+        "实现了文章和评论的 CRUD API",
+        "前端有文章列表、文章详情、评论组件"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "创建一个电商平台，包含商品列表、购物车、订单管理功能",
+      "expected_output": "电商应用完整结构，包含商品、购物车、订单模型和支付流程",
+      "files": [],
+      "expectations": [
+        "创建了 Product, Cart, Order, OrderItem 模型",
+        "实现了商品列表分页和搜索功能",
+        "购物车支持添加、删除、修改数量",
+        "订单创建和状态管理流程",
+        "前端有商品展示、购物车、结账页面"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "创建一个实时聊天应用，支持多房间聊天和消息历史",
+      "expected_output": "聊天应用完整结构，包含WebSocket实时通信和消息存储",
+      "files": [],
+      "expectations": [
+        "实现了 WebSocket 连接管理",
+        "创建了 Room 和 Message 模型",
+        "支持多房间加入和离开",
+        "消息广播和私聊功能",
+        "前端有聊天界面和房间列表"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "创建一个数据仪表盘应用，支持图表展示、数据筛选和导出",
+      "expected_output": "仪表盘应用完整结构，包含数据可视化、筛选和导出功能",
+      "files": [],
+      "expectations": [
+        "集成了图表库 (Recharts/ECharts)",
+        "实现了数据聚合和统计API",
+        "支持日期范围和类别筛选",
+        "CSV/Excel 导出功能",
+        "前端有仪表盘布局和多种图表组件"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "创建一个文件管理系统，支持文件上传、预览、文件夹组织",
+      "expected_output": "文件管理应用完整结构，包含文件存储、预览和组织功能",
+      "files": [],
+      "expectations": [
+        "实现了文件上传和存储",
+        "创建了 File 和 Folder 模型",
+        "支持图片预览和PDF查看",
+        "文件移动、重命名、删除功能",
+        "前端有文件浏览器界面"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "创建一个多语言内容管理系统，支持中英文切换和内容编辑",
+      "expected_output": "国际化CMS应用，包含多语言支持和富文本编辑",
+      "files": [],
+      "expectations": [
+        "配置了 next-intl 国际化",
+        "创建了翻译文件 en.json 和 zh.json",
+        "实现了内容的多语言版本存储",
+        "富文本编辑器集成",
+        "前端有语言切换器和内容管理界面"
+      ]
+    }
+  ]
+}
